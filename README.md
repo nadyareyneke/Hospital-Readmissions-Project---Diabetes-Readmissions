@@ -37,39 +37,6 @@ Average Number of Lab Procedures:  43.2
 Average Number of Medications:  16.3
 Number of Patients of Diabetes Medication:  19228
 
-Columns in dataset: Index(['age', 'time_in_hospital', 'n_lab_procedures', 'n_procedures',
-       'n_medications', 'n_outpatient', 'n_inpatient', 'n_emergency',
-       'medical_specialty', 'diag_1', 'diag_2', 'diag_3', 'glucose_test',
-       'A1Ctest', 'change', 'diabetes_med', 'readmitted'],
-      dtype='object')
-       age  time_in_hospital  n_lab_procedures  n_procedures  n_medications  \
-0  [70-80)                 8                72             1             18   
-1  [70-80)                 3                34             2             13   
-2  [50-60)                 5                45             0             18   
-3  [70-80)                 2                36             0             12   
-4  [60-70)                 1                42             0              7   
-
-   n_outpatient  n_inpatient  n_emergency medical_specialty       diag_1  \
-0             2            0            0           Missing  Circulatory   
-1             0            0            0             Other        Other   
-2             0            0            0           Missing  Circulatory   
-3             1            0            0           Missing  Circulatory   
-4             0            0            0  InternalMedicine        Other   
-
-        diag_2       diag_3 glucose_test A1Ctest change diabetes_med  \
-0  Respiratory        Other           no      no     no          yes   
-1        Other        Other           no      no     no          yes   
-2  Circulatory  Circulatory           no      no    yes          yes   
-3        Other     Diabetes           no      no    yes          yes   
-4  Circulatory  Respiratory           no      no     no          yes   
-
-  readmitted  
-0         no  
-1         no  
-2        yes  
-3        yes  
-4         no  
-
 
 
                                                             3. Data Cleaning
@@ -144,12 +111,12 @@ Figure 3.
 ![](https://github.com/nadyareyneke/Hospital-Readmissions-Project---Diabetes-Readmissions/blob/main/Figure%203%20_%20Readmissions%20Rate%20by%20Ward.png)
 
 Figure 3 displays substantial variation in readmission rates depending on the ward:
-    - Family and General Practice displayed the highest readmission rate (49.5%) - suggests that patients admitted to this ward require more complex
+  - Family and General Practice displayed the highest readmission rate (49.5%) - suggests that patients admitted to this ward require more complex
       follow-up care plans or have poorly managed chronic conditions.
 
-    - Emergency and Trauma displayed a similarly high readmission rate (49.4%).
+  - Emergency and Trauma displayed a similarly high readmission rate (49.4%).
 
-    - Missing ward data indicates a large portion of patient readmissions (48.9%) in which were not assigned to a specific ward. This highlights a 
+  - Missing ward data indicates a large portion of patient readmissions (48.9%) in which were not assigned to a specific ward. This highlights a 
       potential data quality issue.
 
 Ward-level variation suggests that readmission risk is not uniform. This analysis directly informs operational decisions (e.g. where to target 
@@ -185,19 +152,39 @@ developing an early-warning system.
  Figure 5.                                                         
 ![](https://github.com/nadyareyneke/Hospital-Readmissions-Project---Diabetes-Readmissions/blob/main/Figure%205%20_%20Average%20Length%20of%20Hospital%20Stay%20by%20Medical%20Ward.png)
 
+
+
+
 Figure 6.
+
 ![](https://github.com/nadyareyneke/Hospital-Readmissions-Project---Diabetes-Readmissions/blob/main/Figure%206%20_%20Number%20of%20Lab%20Procedures.png)
 
+
+
+
 Figure 8. 
+
 ![](https://github.com/nadyareyneke/Hospital-Readmissions-Project---Diabetes-Readmissions/blob/main/Figure%208%20_Lab%20Procedures%20vs%20Length%20of%20Stay.png)
 
+
+
+
 Figure 9.
+
 ![](https://github.com/nadyareyneke/Hospital-Readmissions-Project---Diabetes-Readmissions/blob/main/Figure%209%20_%20Patient%20Count%20by%20Medical%20Ward.png)
 
+
+
+
 Figure 10.
+
 ![](https://github.com/nadyareyneke/Hospital-Readmissions-Project---Diabetes-Readmissions/blob/main/Figure%2010_Age%20Distribution%20of%20Patients.png)
 
+
+
+
 Figure 11.
+
 ![](https://github.com/nadyareyneke/Hospital-Readmissions-Project---Diabetes-Readmissions/blob/main/Figure%2011%20_%20Readmission%20Rate%20by%20Ward%20and%20Prior%20Inpatient%20Visits.png)
 
 
@@ -219,20 +206,40 @@ of at-risk cohorts, indicating older age groups typically experience higher read
                                                      6. Machine Learning Model
 
 
+
 Figure 12.
+
 ![](https://github.com/nadyareyneke/Hospital-Readmissions-Project---Diabetes-Readmissions/blob/main/Figure%2012%20_%20Top%2010%20Risk%20Factors%20Driving%20Readmissions.png)
 
+
+
+
 Figure 13.
+
 ![](https://github.com/nadyareyneke/Hospital-Readmissions-Project---Diabetes-Readmissions/blob/main/Figure%2013%20_%20Predicted%20Readmission%20Probability%20After%20A%205%20Improvement.png)
 
+
+
+
 Figure 14. 
+
 ![](https://github.com/nadyareyneke/Hospital-Readmissions-Project---Diabetes-Readmissions/blob/main/Figure%2014%20_Top%203%20Predictors%20Driving%20Readmissions.png)
 
+
+
+
 Figure 15.
+
 ![](https://github.com/nadyareyneke/Hospital-Readmissions-Project---Diabetes-Readmissions/blob/main/Figure%2015%20_%20Drivng%20or%20Protective%20Effect%20on%20Readmission%20Risk.png)
 
+
+
+
 Figure 16.
+
 ![](https://github.com/nadyareyneke/Hospital-Readmissions-Project---Diabetes-Readmissions/blob/main/Figure%2016%20_%20Readmission%20Rate%20by%20Age%20Group.png)
+
+
 
 
 Machine Learning Model - Predicting 30-Day Hospital Readmissions
@@ -352,3 +359,4 @@ Clinical Teams
 Data & Analytics Teams
    - Opportunity for predictive improvement through feature engineering and modern ML approaches.
    - Address missing ward data and enhancement on clinical detail.
+
